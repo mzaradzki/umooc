@@ -12485,7 +12485,7 @@ Default GPU Device: /gpu:0
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="Medium-post-about-Chat-Bot-(code-base-structure-very-similar-to-assigment)">Medium post about Chat Bot (code base structure very similar to assigment)<a class="anchor-link" href="#Medium-post-about-Chat-Bot-(code-base-structure-very-similar-to-assigment)">&#182;</a></h4><ul>
-<li>See blog post : <a href="https://tutorials.botsfloor.com/how-to-build-your-first-chatbot-c84495d4622d">https://tutorials.botsfloor.com/how-to-build-your-first-chatbot-c84495d4622d</a></li>
+<li>See Medium post from Dave Currie : <a href="https://tutorials.botsfloor.com/how-to-build-your-first-chatbot-c84495d4622d">https://tutorials.botsfloor.com/how-to-build-your-first-chatbot-c84495d4622d</a></li>
 </ul>
 <h4 id="Git-code-from-MOOC-slides">Git code from MOOC slides<a class="anchor-link" href="#Git-code-from-MOOC-slides">&#182;</a></h4><ul>
 <li><a href="https://github.com/ematvey/tensorflow-seq2seq-tutorials/blob/master/2-seq2seq-advanced.ipynb">https://github.com/ematvey/tensorflow-seq2seq-tutorials/blob/master/2-seq2seq-advanced.ipynb</a></li>
@@ -12496,7 +12496,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">decoding_layer</span><span class="p">(</span><span class="n">dec_embed_input</span><span class="p">,</span> <span class="n">dec_embeddings</span><span class="p">,</span> <span class="n">encoder_state</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="n">sequence_length</span><span class="p">,</span> <span class="n">rnn_size</span><span class="p">,</span>
@@ -12538,7 +12538,7 @@ Default GPU Device: /gpu:0
                                                                     <span class="n">scope</span><span class="o">=</span><span class="n">decoding_scope</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="c1"># INFO :</span>
-            <span class="c1"># Adding preset weight of low variance helps training according to Dave Curry blog</span>
+            <span class="c1"># Adding preset weight of low variance helps training according to Dave Currie Medium post</span>
             <span class="c1"># Needs formal on/off test</span>
             <span class="n">weights</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">truncated_normal_initializer</span><span class="p">(</span><span class="n">stddev</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span> <span class="c1"># lower variance than default TF ?</span>
             <span class="n">biases</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">zeros_initializer</span><span class="p">()</span>
